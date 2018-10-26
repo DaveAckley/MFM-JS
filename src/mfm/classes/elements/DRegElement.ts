@@ -44,8 +44,6 @@ export class DRegElement extends Elem {
       const destroyDReg: boolean = Math.random() * this.pDREG_DESTROY < 1;
 
       if (destroyDReg) {
-        //ew.origin.killAtom(availableSite);
-        //availableSite.atom = new Atom(ElementTypes.EMPTY);
         console.log("DREG DESTROYED");
         ew.origin.moveAtom(availableSite);
       }
@@ -55,7 +53,6 @@ export class DRegElement extends Elem {
 
       if (destroyAny) {
         console.log(availableSite.atom.type.name + " DESTROYED");
-        //availableSite.atom = new Atom(ElementTypes.EMPTY);
         ew.origin.moveAtom(availableSite);
       }
     }
